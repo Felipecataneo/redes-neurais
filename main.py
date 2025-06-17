@@ -192,8 +192,9 @@ if secao == "🔍 Introdução":
         </div>
         """, unsafe_allow_html=True)
     with col2:
-        st.image("https://www.google.com/imgres?q=Artificial%20Neuron.png&imgurl=https%3A%2F%2Fimg.favpng.com%2F14%2F13%2F19%2Fartificial-neural-network-deep-learning-artificial-intelligence-machine-learning-neuron-png-favpng-R2h2Atu1ukdBmjhEyMzXmVtPD.jpg&imgrefurl=https%3A%2F%2Ffavpng.com%2Fpng_view%2Fbrain-artificial-neural-network-deep-learning-artificial-intelligence-machine-learning-neuron-png%2FkR6FGUUd&docid=xENqRVzuapGZeM&tbnid=kPEG4siK8nit4M&vet=12ahUKEwjqkseV2_iNAxUQq5UCHQNxG6YQM3oECHMQAA..i&w=820&h=440&hcb=2&ved=2ahUKEwjqkseV2_iNAxUQq5UCHQNxG6YQM3oECHMQAA", 
-                 caption="Modelo de um neurônio artificial.")
+        # Versão nova com arquivo local
+        st.image("images.png", 
+                caption="Modelo de um neurônio artificial.")
     
 elif secao == "🔧 O Perceptron":
     # (Código do Perceptron original, sem alterações significativas)
