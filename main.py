@@ -11,6 +11,7 @@ from secao_cnn import mostrar as mostrar_cnn
 from secao_rnn import mostrar as mostrar_rnn
 from secao_transformers import mostrar as mostrar_transformers
 from secao_playground import mostrar as mostrar_playground
+from secao_gans import mostrar as mostrar_gans
 
 def main():
     """Função principal que executa o aplicativo Streamlit."""
@@ -41,6 +42,7 @@ def main():
         "🧠 MLP em Ação": mostrar_mlp_acao,
         "🖼️ CNNs": mostrar_cnn,
         "📜 RNNs": mostrar_rnn,
+        "🎨 GANs": mostrar_gans,
         "🤖 Transformers": mostrar_transformers,
         "🎮 Playground Interativo": mostrar_playground,
     }
