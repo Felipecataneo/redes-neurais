@@ -1,87 +1,116 @@
-🧠 Guia Avançado de Redes Neurais
-![alt text](https://img.shields.io/badge/Python-3.10+-blue.svg)
+# 🧠 Guia Didático Interativo de Redes Neurais
 
-![alt text](https://img.shields.io/badge/License-MIT-green.svg)
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10+-blue.svg" alt="Python 3.10+">
+  <img src="https://img.shields.io/badge/Streamlit-1.35+-ff4b4b.svg" alt="Streamlit">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License MIT"></a>
+</p>
 
-![alt text](https://img.shields.io/badge/Streamlit-1.35+-red.svg)
-Este repositório contém o código-fonte de um aplicativo web interativo, desenvolvido com Streamlit, para servir como um guia didático sobre Redes Neurais. A ferramenta foi projetada especialmente para estudantes de pós-graduação, pesquisadores e entusiastas que desejam aprofundar seus conhecimentos em Machine Learning de forma visual e prática.
+<p align="center">
+  <i>Uma plataforma interativa para desmistificar conceitos de Machine Learning, desde o Perceptron até a arquitetura Transformer, com foco em visualização e experimentação prática.</i>
+</p>
 
-✨ Principais Recursos
-O aplicativo é dividido em seções modulares, cobrindo desde os conceitos mais básicos até arquiteturas avançadas:
-🔍 Introdução: Uma visão geral sobre o que são Redes Neurais e sua inspiração biológica.
-🔧 O Perceptron: Explore o bloco de construção fundamental das redes neurais, suas capacidades e limitações.
-🏛️ Arquitetura de Redes Neurais: Entenda como múltiplos neurônios são organizados em camadas para formar um Multilayer Perceptron (MLP).
-🧠 MLP em Ação: Veja na prática como um MLP resolve problemas não-linearmente separáveis que o Perceptron não consegue.
-🔄 Backpropagation: Uma explicação didática do algoritmo de aprendizado que treina as redes neurais.
-🖼️ Redes Neurais Convolucionais (CNN): Demonstrações interativas das operações de convolução e pooling, essenciais para o processamento de imagens.
-📜 Redes Neurais Recorrentes (RNN): Conceitos de memória e processamento de sequências, com foco em LSTM e GRU.
-🎮 Playground Interativo: Um ambiente sandbox para treinar seu próprio MLP, ajustando dados, arquitetura e hiperparâmetros, e visualizando a fronteira de decisão resultante.
-🛠️ Tecnologias Utilizadas
-Framework Web: Streamlit
-Machine Learning: Scikit-learn, TensorFlow
-Manipulação de Dados: NumPy, Pandas
-Visualização de Dados: Matplotlib, Plotly
-Processamento de Sinais: SciPy
-🚀 Instalação e Execução
+---
+
+
+## ✨ Sobre o Projeto
+
+Este aplicativo web, desenvolvido com Streamlit, é um guia didático avançado sobre Redes Neurais. Foi projetado para estudantes, pesquisadores e entusiastas que desejam aprofundar seus conhecimentos não apenas na teoria, mas também na prática, visualizando o impacto de cada componente e hiperparâmetro em tempo real.
+
+O projeto foi recentemente **refatorado para uma arquitetura modular**, tornando o código mais limpo, manutenível e fácil para novas contribuições.
+
+## 📚 Seções e Recursos
+
+O guia é dividido em módulos que constroem o conhecimento de forma progressiva:
+
+| Seção                        | Recurso Principal                                                                                                     |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| **🔍 Introdução**            | Uma visão geral sobre os componentes fundamentais das Redes Neurais.                                                  |
+| **🔧 Perceptron**             | Explore interativamente o primeiro neurônio artificial, ajustando pesos e bias para entender suas limitações.           |
+| **🌐 Redes Neurais (MLP)**   | Construa visualmente a arquitetura de uma rede multicamadas e explore as principais funções de ativação.              |
+| **🔄 Backpropagation**      | Desvende o "coração" do aprendizado: um passo a passo detalhado e interativo do algoritmo.                             |
+| **🧠 MLP em Ação**           | Veja na prática como um MLP resolve problemas não-lineares, com separação de dados de treino/teste e métricas de acurácia. |
+| **🖼️ CNNs**                  | Aplique filtros (kernels) em uma imagem e veja como a operação de convolução extrai características visuais.           |
+| **📜 RNNs**                  | Entenda o conceito de memória e processamento de sequências com ilustrações clássicas de RNNs, LSTMs e GRUs.            |
+| **🤖 Transformers**          | Uma demonstração de ponta a ponta com um tokenizer pré-treinado para português, mostrando geração de texto antes e depois de um treinamento simulado. |
+| **🎮 Playground Interativo** | Um sandbox completo para treinar seu próprio MLP, ajustando dataset, arquitetura e hiperparâmetros, e visualizando a fronteira de decisão resultante. |
+
+
+## 📂 Estrutura do Projeto
+
+O código é organizado de forma modular para facilitar a manutenção e a contribuição:
+
+```
+guia_redes_neurais/
+├── 📂 assets/              # Imagens e outros recursos estáticos
+├── main.py                # Ponto de entrada: roteador principal e UI global
+├── requirements.txt       # Dependências do projeto
+├── secao_*.py             # Cada seção do app em seu próprio módulo
+└── visualizacoes.py       # Funções de plotagem reutilizáveis
+```
+
+- **`main.py`**: Configura a página, a barra de navegação e chama a função da seção apropriada.
+- **`secao_*.py`**: Cada arquivo contém toda a lógica e os elementos de UI para uma única seção do aplicativo.
+
+## 🛠️ Tecnologias Utilizadas
+
+- **Framework Web:** [Streamlit](https://streamlit.io/)
+- **Machine Learning & Data Science:** [Scikit-learn](https://scikit-learn.org/), [PyTorch](https://pytorch.org/), [Transformers](https://huggingface.co/docs/transformers/index), [TensorFlow](https://www.tensorflow.org/), [NumPy](https://numpy.org/), [Pandas](https://pandas.pydata.org/)
+- **Visualização de Dados:** [Matplotlib](https://matplotlib.org/), [Plotly](https://plotly.com/), [Seaborn](https://seaborn.pydata.org/)
+- **Processamento de Sinais:** [SciPy](https://scipy.org/)
+
+## 🚀 Instalação e Execução
+
 Siga os passos abaixo para executar o aplicativo localmente.
-Pré-requisitos
-Python 3.10 ou superior
-Git
-Passos
-Clone o repositório:
-Generated bash
-git clone https://github.com/Felipecataneo/redes-neurais
-cd redes-neurais-main
-Crie e ative um ambiente virtual:
-É uma forte recomendação usar um ambiente virtual para isolar as dependências do projeto.
-Usando venv (padrão do Python):
-Generated bash
-# Criar o ambiente
-python -m venv .venv
 
-# Ativar o ambiente
-# No Windows (PowerShell):
-.\.venv\Scripts\Activate.ps1
-# No macOS/Linux:
-source .venv/bin/activate
-Use code with caution.
-Bash
-Usando uv (alternativa rápida):
-Generated bash
-# Criar o ambiente
-uv venv
+#### Pré-requisitos
+- Python 3.10 ou superior
+- Git
 
-# Ativar o ambiente
-# No Windows (PowerShell):
-.\.venv\Scripts\Activate.ps1
-# No macOS/Linux:
-source .venv/bin/activate
-Use code with caution.
-Bash
-Instale as dependências:
-O arquivo requirements.txt contém todos os pacotes necessários com versões compatíveis.
-Generated bash
-pip install -r requirements.txt
-Use code with caution.
-Bash
-Ou, se estiver usando uv:
-Generated bash
-uv pip sync requirements.txt
-Use code with caution.
-Bash
-Execute o aplicativo Streamlit:
-Com o ambiente ativado e as dependências instaladas, inicie o aplicativo:
-Generated bash
-streamlit run main.py
-Use code with caution.
-Bash
-O aplicativo será aberto automaticamente em uma nova aba do seu navegador.
-🤝 Como Contribuir
-Contribuições são sempre bem-vindas! Se você tiver sugestões de melhoria, novos recursos ou correções de bugs, sinta-se à vontade para:
-Fazer um Fork deste repositório.
-Criar uma nova Branch (git checkout -b minha-feature).
-Fazer suas alterações e Commit (git commit -m 'Adiciona nova feature').
-Fazer um Push para a sua Branch (git push origin minha-feature).
-Abrir um Pull Request.
-📄 Licença
-Este projeto está licenciado sob a Licença MIT. Veja o arquivo LICENSE para mais detalhes.
+#### Passos
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone https://github.com/Felipecataneo/redes-neurais.git
+    cd SEU_REPOSITORIO
+    ```
+
+2.  **Crie e ative um ambiente virtual (Recomendado):**
+    ```bash
+    # Criar o ambiente
+    python -m venv .venv
+
+    # Ativar o ambiente
+    # No Windows (PowerShell):
+    .\.venv\Scripts\Activate.ps1
+    # No macOS/Linux:
+    source .venv/bin/activate
+    ```
+    *Alternativa rápida com [uv](https://github.com/astral-sh/uv): `uv venv`*
+
+3.  **Instale as dependências:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+    *Alternativa rápida com uv: `uv pip sync requirements.txt`*
+
+
+4.  **Execute o aplicativo Streamlit:**
+    ```bash
+    streamlit run main.py
+    ```
+    O aplicativo será aberto automaticamente em uma nova aba do seu navegador.
+
+## 🤝 Como Contribuir
+
+Contribuições são sempre bem-vindas! Se você tiver sugestões, novos recursos ou correções, sinta-se à vontade para:
+
+1.  Fazer um **Fork** deste repositório.
+2.  Criar uma nova **Branch** (`git checkout -b minha-feature`).
+3.  Fazer suas alterações e **Commit** (`git commit -m 'Adiciona nova feature'`).
+4.  Fazer um **Push** para a sua Branch (`git push origin minha-feature`).
+5.  Abrir um **Pull Request**.
+
+## 📄 Licença
+
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
